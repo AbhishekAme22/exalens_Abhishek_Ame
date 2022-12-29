@@ -1,0 +1,34 @@
+blocks = [
+  {
+      "gym": false,
+      "school": true,
+      "store": false,
+  },
+  {
+      "gym": true,
+      "school": false,
+      "store": false,
+  },
+  {
+      "gym": true,
+      "school": true,
+      "store": false,
+  },
+  {
+      "gym": false,
+      "school": true,
+      "store": false,
+  },
+  {
+  "gym": false,
+  "school": true,
+  "store": true,
+  }
+]
+reqs = ["gym", "school", "store"]
+
+apartmentHunting(blocks, reqs)  # should return 3
+
+req = ["gym"]
+
+apartmentHunting(blocks, req)  #should return 1
