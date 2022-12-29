@@ -1,0 +1,23 @@
+Approach:-
+
+The approach of this solution is to iterate through each block in the blocks list and compute the farthest distance to any required building for each block. It then returns the index of the block that has the minimum farthest distance.
+
+To compute the farthest distance to any required building for each block, the function iterates through each requirement in the reqs list and checks whether the current block has the requirement. If it does, the distance is set to 0. If it does not, the function searches for the next block that has the requirement and sets the distance to the index of that block.
+
+Finally, the function updates the minimum distance and index if necessary and returns the minimum index.
+
+This approach has a time complexity of O(n^2), where n is the number of blocks, because it involves nested loops that iterate through all blocks and requirements. It has a space complexity of O(1), since it only uses a constant amount of additional memory
+
+
+Algorithm:-
+
+1.Initialize minimum distance to infinity and minimum index to -1.
+2.Iterate through each block in the blocks list.
+3.For the current block, initialize maximum distance to -1.
+4.Iterate through each requirement in the reqs list.
+5.For the current requirement, check whether the current block has the requirement. If it does, set distance to 0. If it does not, search for the next block that has the requirement and set distance to the index of that block.
+6.Update maximum distance if necessary.
+7.Update minimum distance and index if necessary.
+8.Return the minimum index.
+
+This algorithm has a time complexity of O(n^2), where n is the number of blocks, because it involves nested loops that iterate through all blocks and requirements. It has a space complexity of O(1), since it only uses a constant amount of additional memory.
